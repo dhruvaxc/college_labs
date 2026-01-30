@@ -1,3 +1,4 @@
+/*Write a program that prints a simple pattern using asterisks (*). */
 public class Q3
 {
     public static void main(String[] args)

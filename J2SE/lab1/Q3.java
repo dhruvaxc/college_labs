@@ -1,3 +1,5 @@
+/*write an application that input three integer from the user and obtain the sum, average,product,largest and
+smallest of the numbers using interface and abstract class concept. */
 import java.util.Scanner;
 interface operations
 {

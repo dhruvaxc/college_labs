@@ -1,3 +1,6 @@
+/*Write an application that input from the user that the radius of the circle is an integer and the print the circle
+diameter , circumfrence and area using the floating point value 3.14159 for math.Pi(You can also use the
+predefined constant math.pi for the value of pi.) */
 import java.util.Scanner;
 public class Q4 
 {

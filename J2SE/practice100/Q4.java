@@ -1,3 +1,5 @@
+/*Create a program that displays &quot;Welcome to Java Programming&quot;
+ in a box made of asterisks. */
 public class Q4
 {
     public static void main(String[] args)

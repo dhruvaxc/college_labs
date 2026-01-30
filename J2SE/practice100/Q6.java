@@ -1,3 +1,4 @@
+/*Create a program that prints &quot;Java is fun!&quot; three times. */
 public class Q6
 {
     public static void main(String[] args)

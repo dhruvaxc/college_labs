@@ -1,3 +1,5 @@
+/*Create a Student class with attributes: name and rollNumber. 
+Create an object and print its details. */
 class Student
 {
     String name;

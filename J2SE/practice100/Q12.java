@@ -1,3 +1,5 @@
+/*Design a Book class with title, author, and price. 
+Create two book objects with different values. */
 class book
 {
     String name,author;

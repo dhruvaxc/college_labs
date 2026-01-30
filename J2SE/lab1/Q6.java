@@ -1,3 +1,5 @@
+/*Q6)Write an application that calculate the square and cubes of number from 0to10 and print the resulting value
+in table format. */
 public class Q6
 {
     public static void main(String[] args)

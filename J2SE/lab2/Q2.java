@@ -1,3 +1,16 @@
+/*Create a class called invoice that hardware store might use to represent an invoice for an item sold at the
+store. An invoice should include four pieces of information as instance variable
+
+ a part number(type string)
+ a part description(type string)
+ a quantity of the item being purchased(type int)
+ a price per item(double)
+
+Your class should have a constructor that initialization the four instance variable . Provide a set and a get method
+for each instance variable . In addition provide method named getInvoiceAmount that calculate the invoice
+amount(i.e. multiplies the quantity per item ), then return the amount as a double value.If the quantity is not
+positive it should be set to 0. If the price per item is not positive it should be set to 0.0. Write test application
+named invoice test that demonstration class invoice capabilities. */
 import java.util.Scanner;
 class Invoice
 {

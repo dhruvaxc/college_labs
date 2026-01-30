@@ -1,3 +1,5 @@
+/*Write an application that ask the user to enter two integer, obtain them from user and print their sum, product,
+difference and quotient and must be use package concept in this application. */
 import java.util.Scanner;
 import mypackages.Operations;
 class Q1 
