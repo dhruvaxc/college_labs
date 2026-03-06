@@ -1,13 +1,11 @@
 // Move the last node of a linked list to the front
 #include <stdio.h>
 #include <stdlib.h>
-
 struct Node
 {
     int data;
     struct Node* next;
 };
-
 struct Node* newNode(int data)
 {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
@@ -15,7 +13,6 @@ struct Node* newNode(int data)
     node->next = NULL;
     return node;
 }
-
 void moveLastToFront(struct Node** head)
 {
     if (*head == NULL || (*head)->next == NULL)
@@ -33,7 +30,6 @@ void moveLastToFront(struct Node** head)
     last->next = *head;
     *head = last;
 }
-
 void printList(struct Node* head)
 {
     struct Node* temp = head;
@@ -44,7 +40,6 @@ void printList(struct Node* head)
     }
     printf("\n");
 }
-
 int main()
 {
     int n, value;

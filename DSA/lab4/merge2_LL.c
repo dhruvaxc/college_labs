@@ -1,13 +1,11 @@
 // Merge K sorted linked lists into one sorted linked list
 #include <stdio.h>
 #include <stdlib.h>
-
 struct Node
 {
     int data;
     struct Node* next;
 };
-
 struct Node* newNode(int data)
 {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
@@ -15,7 +13,6 @@ struct Node* newNode(int data)
     node->next = NULL;
     return node;
 }
-
 struct Node* mergeTwoLists(struct Node* l1, struct Node* l2)
 {
     if (l1 == NULL)
@@ -39,7 +36,6 @@ struct Node* mergeTwoLists(struct Node* l1, struct Node* l2)
     }
     return result;
 }
-
 struct Node* mergeKLists(struct Node** lists, int k)
 {
     if (k == 0)
@@ -60,7 +56,6 @@ struct Node* mergeKLists(struct Node** lists, int k)
     }
     return lists[0];
 }
-
 void printList(struct Node* head)
 {
     while (head != NULL)
@@ -70,7 +65,6 @@ void printList(struct Node* head)
     }
     printf("\n");
 }
-
 int main()
 {
     int k, n, value;

@@ -1,13 +1,11 @@
 // Check whether a singly linked list is a palindrome
 #include <stdio.h>
 #include <stdlib.h>
-
 struct Node
 {
     int data;
     struct Node* next;
 };
-
 struct Node* newNode(int data)
 {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
@@ -15,7 +13,6 @@ struct Node* newNode(int data)
     node->next = NULL;
     return node;
 }
-
 struct Node* reverseList(struct Node* head)
 {
     struct Node* prev = NULL;
@@ -30,7 +27,6 @@ struct Node* reverseList(struct Node* head)
     }
     return prev;
 }
-
 int isPalindrome(struct Node* head)
 {
     if (head == NULL || head->next == NULL)
@@ -61,7 +57,6 @@ int isPalindrome(struct Node* head)
     slow->next = reverseList(secondHalf);
     return result;
 }
-
 int main()
 {
     int n, value;

@@ -1,13 +1,11 @@
 // Detect a loop in a singly linked list
 #include <stdio.h>
 #include <stdlib.h>
-
 struct Node
 {
     int data;
     struct Node* next;
 };
-
 struct Node* newNode(int data)
 {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
@@ -15,7 +13,6 @@ struct Node* newNode(int data)
     node->next = NULL;
     return node;
 }
-
 int detectLoop(struct Node* head)
 {
     struct Node* slow = head;
@@ -31,7 +28,6 @@ int detectLoop(struct Node* head)
     }
     return 0;
 }
-
 int main()
 {
     int n, value, choice;

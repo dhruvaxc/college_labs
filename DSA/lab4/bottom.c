@@ -1,14 +1,12 @@
 // Flatten a linked list having next and bottom pointers into a single sorted list
 #include <stdio.h>
 #include <stdlib.h>
-
 struct Node
 {
     int data;
     struct Node* next;
     struct Node* bottom;
 };
-
 struct Node* newNode(int data)
 {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
@@ -17,7 +15,6 @@ struct Node* newNode(int data)
     node->bottom = NULL;
     return node;
 }
-
 struct Node* merge(struct Node* a, struct Node* b)
 {
     if (a == NULL)
@@ -42,7 +39,6 @@ struct Node* merge(struct Node* a, struct Node* b)
     result->next = NULL;
     return result;
 }
-
 struct Node* flatten(struct Node* root)
 {
     if (root == NULL || root->next == NULL)
@@ -53,7 +49,6 @@ struct Node* flatten(struct Node* root)
     root = merge(root, root->next);
     return root;
 }
-
 void printList(struct Node* head)
 {
     while (head != NULL)
@@ -63,7 +58,6 @@ void printList(struct Node* head)
     }
     printf("\n");
 }
-
 int main()
 {
     struct Node* head = newNode(5);

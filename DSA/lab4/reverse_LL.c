@@ -1,13 +1,11 @@
 // Reverse a singly linked list in groups of size k
 #include <stdio.h>
 #include <stdlib.h>
-
 struct Node
 {
     int data;
     struct Node* next;
 };
-
 struct Node* newNode(int data)
 {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
@@ -15,7 +13,6 @@ struct Node* newNode(int data)
     node->next = NULL;
     return node;
 }
-
 struct Node* reverseInGroups(struct Node* head, int k)
 {
     struct Node* current = head;
@@ -36,7 +33,6 @@ struct Node* reverseInGroups(struct Node* head, int k)
     }
     return prev;
 }
-
 void printList(struct Node* head)
 {
     struct Node* temp = head;
@@ -47,7 +43,6 @@ void printList(struct Node* head)
     }
     printf("\n");
 }
-
 int main()
 {
     int n, value, k;

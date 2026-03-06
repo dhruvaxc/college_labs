@@ -1,13 +1,11 @@
 // Merge two sorted singly linked lists into one sorted list
 #include <stdio.h>
 #include <stdlib.h>
-
 struct Node
 {
     int data;
     struct Node* next;
 };
-
 struct Node* newNode(int data)
 {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
@@ -15,7 +13,6 @@ struct Node* newNode(int data)
     node->next = NULL;
     return node;
 }
-
 struct Node* mergeLists(struct Node* l1, struct Node* l2)
 {
     if (l1 == NULL)
@@ -39,7 +36,6 @@ struct Node* mergeLists(struct Node* l1, struct Node* l2)
     }
     return result;
 }
-
 void printList(struct Node* head)
 {
     struct Node* temp = head;
@@ -50,7 +46,6 @@ void printList(struct Node* head)
     }
     printf("\n");
 }
-
 int main()
 {
     int n1, n2, value;

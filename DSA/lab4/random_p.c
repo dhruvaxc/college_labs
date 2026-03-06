@@ -2,14 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 struct Node
 {
     int data;
     struct Node* next;
     struct Node* random;
 };
-
 struct Node* newNode(int data)
 {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
@@ -18,7 +16,6 @@ struct Node* newNode(int data)
     node->random = NULL;
     return node;
 }
-
 struct Node* getNodeAt(struct Node* head, int index)
 {
     struct Node* temp = head;
@@ -28,7 +25,6 @@ struct Node* getNodeAt(struct Node* head, int index)
     }
     return temp;
 }
-
 struct Node* cloneList(struct Node* head)
 {
     if (head == NULL)
@@ -67,7 +63,6 @@ struct Node* cloneList(struct Node* head)
     }
     return copyHead;
 }
-
 void printList(struct Node* head)
 {
     struct Node* temp = head;
@@ -77,7 +72,6 @@ void printList(struct Node* head)
         temp = temp->next;
     }
 }
-
 int main()
 {
     int n, value;

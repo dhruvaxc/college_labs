@@ -1,13 +1,11 @@
 // Find the intersection point of two singly linked lists
 #include <stdio.h>
 #include <stdlib.h>
-
 struct Node
 {
     int data;
     struct Node* next;
 };
-
 struct Node* newNode(int data)
 {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
@@ -15,7 +13,6 @@ struct Node* newNode(int data)
     node->next = NULL;
     return node;
 }
-
 struct Node* getIntersection(struct Node* head1, struct Node* head2)
 {
     struct Node* a = head1;
@@ -27,7 +24,6 @@ struct Node* getIntersection(struct Node* head1, struct Node* head2)
     }
     return a;
 }
-
 void printList(struct Node* head)
 {
     struct Node* temp = head;
@@ -38,7 +34,6 @@ void printList(struct Node* head)
     }
     printf("\n");
 }
-
 int main()
 {
     struct Node* head1 = newNode(1);

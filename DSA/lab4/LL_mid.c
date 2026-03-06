@@ -3,13 +3,11 @@ Example: 11 → 22 → 33 → 44 → 55 → NULL
 */
 #include <stdio.h>
 #include <stdlib.h>
-
 struct Node
 {
     int data;
     struct Node* next;
 };
-
 struct Node* newNode(int data)
 {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
@@ -17,7 +15,6 @@ struct Node* newNode(int data)
     node->next = NULL;
     return node;
 }
-
 void findMiddle(struct Node* head)
 {
     struct Node* slow = head;
@@ -32,7 +29,6 @@ void findMiddle(struct Node* head)
         printf("Middle element: %d\n", slow->data);
     }
 }
-
 int main()
 {
     int n, value;
