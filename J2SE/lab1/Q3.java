@@ -51,11 +51,11 @@ public class Q3
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-        compare comp = new compare();
-        System.out.println("Sum: " + comp.sum(a, b, c));
-        System.out.println("Product: " + comp.product(a, b, c));
-        System.out.println("Average: " + comp.average(a, b, c));
-        comp.smallest_largest(a, b, c);
+        operations op = new compare();
+        System.out.println("Sum: " + op.sum(a, b, c));
+        System.out.println("Product: " + op.product(a, b, c));
+        System.out.println("Average: " + op.average(a, b, c));
+        op.smallest_largest(a, b, c);
         sc.close();
     }
 }

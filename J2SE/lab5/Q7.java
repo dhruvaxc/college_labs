@@ -25,7 +25,8 @@ import java.util.*;
 enum Result { CORRECT, WRONG, UNANSWERED }
 
 public class Q7 {
-    public static void main(String[] args){
+    public static void main(String[] args)
+    {
         Scanner sc=new Scanner(System.in);
         char[] correct={'C','A','B','D','B','C','C','A'};
         char[] submitted=new char[8];
@@ -34,11 +35,21 @@ public class Q7 {
 
         int correctCount=0,wrongCount=0,unansweredCount=0;
         System.out.println("QUESTION SUBMITTED ANS CORRECT ANS RESULT");
-        for(int i=0;i<8;i++){
+        for(int i=0;i<8;i++)
+        {
             Result res;
-            if(submitted[i]=='X'){ res=Result.UNANSWERED; unansweredCount++; }
-            else if(submitted[i]==correct[i]){ res=Result.CORRECT; correctCount++; }
-            else { res=Result.WRONG; wrongCount++; }
+            if(submitted[i]=='X')
+                { 
+                    res=Result.UNANSWERED; unansweredCount++; 
+                }
+            else if(submitted[i]==correct[i])
+                { 
+                    res=Result.CORRECT; correctCount++; 
+                }
+            else 
+                { 
+                    res=Result.WRONG; wrongCount++; 
+                }
             System.out.println((i+1)+" "+submitted[i]+" "+correct[i]+" "+res);
         }
         System.out.println("No. of correct answers: "+correctCount);

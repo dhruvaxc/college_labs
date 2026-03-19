@@ -1,8 +1,13 @@
-/*Q3.)Create a class called employee that include three instance variable a)name(type string) b) last name (type
-string) and c) monthly salary(double). Provide a constructor that initialize the three instance variable. Provide a
-set and a get method of instance variable. if the monthly salary is not positive do not set its value. Write a test
-aplication named employeetest that demonstrate class employee capabilities.create two employee object and
-display each object yearly salary. Then give each employee a 10% hike and display each employee yearly salary
+/*Q3.)Create a class called employee that include three 
+instance variable a)name(type string) b) last name (type
+string) and c) monthly salary(double). Provide a constructor 
+that initialize the three instance variable. Provide a
+set and a get method of instance variable. if the monthly 
+salary is not positive do not set its value. Write a test
+aplication named employeetest that demonstrate class employee 
+capabilities.create two employee object and
+display each object yearly salary. Then give each employee a 
+10% hike and display each employee yearly salary
 again. */
 import java.util.Scanner;
 class Employee

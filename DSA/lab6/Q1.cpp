@@ -5,7 +5,6 @@ Note: The operators can include +, -, *, /, and ^ (where ^ denotes exponentiati
 i.e., power). Division / uses floor division.*/
 #include <bits/stdc++.h>
 using namespace std;
-
 int evaluatePostfix(vector<string> &arr)
 {
     stack<long long> st;

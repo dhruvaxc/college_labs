@@ -1,5 +1,7 @@
-/*Q5)Write an application that inputs one number consisting of five digits from the user, separate the number into
-its individual digits and print the digit separates from one another for three spaces each. for example if the user
+/*Q5)Write an application that inputs one number 
+consisting of five digits from the user, separate the number into
+its individual digits and print the digit separates
+from one another for three spaces each. for example if the user
 type the number 42335 the program should print ( 4 2 3 3 5). */
 import java.util.Scanner;
 public class Q5

@@ -1,6 +1,9 @@
-/*Q1)Create an application that calculate your daily driving cost , so that you can estimate how much money could
-be saved by car pooling which also has other advantages such as reducing carbon emission and traffic congestion
-. The application should input the following informationand display the user's cost per day of driving to work.
+/*Q1)Create an application that calculate your daily 
+driving cost , so that you can estimate how much money could
+be saved by car pooling which also has other advantages 
+such as reducing carbon emission and traffic congestion
+. The application should input the following informationand 
+display the user's cost per day of driving to work.
 
  a)total miles driven per day
  b)cost per gallon of gasoline
