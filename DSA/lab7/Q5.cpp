@@ -1,3 +1,11 @@
+/*Implement Deque and use it to check palindrome.
+Example:
+Input → &quot;madam&quot;
+Front = m, Rear = m → remove
+Front = a, Rear = a → remove
+Result → Palindrome
+Input → &quot;hello&quot;
+Result → Not Palindrome*/
 #include <iostream>
 #include <deque>
 #include <string>

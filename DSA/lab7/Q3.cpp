@@ -1,3 +1,8 @@
+/*Design a Queue using two stacks.
+Example:
+ Enqueue(1), Enqueue(2), Enqueue(3)
+ Dequeue → 1
+ Remaining queue → 2 3*/
 #include <iostream>
 #include <stack>
 #include <vector>

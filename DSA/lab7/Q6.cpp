@@ -1,3 +1,15 @@
+/*Write functions for:
+ Count elements
+ Sum / Min / Max
+ Reverse Queue
+Example:
+Queue → 5 10 15 20
+Output:
+ Count → 4
+ Sum → 50
+ Min → 5
+ Max → 20
+ Reverse → 20 15 10 5*/
 #include <iostream>
 #include <stack>
 #include <vector>

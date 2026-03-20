@@ -1,3 +1,8 @@
+/*Modify Q1 to implement Queue using Linked List and compare memory usage.
+Example:
+ Insert elements: 5 → 15 → 25
+ Display → 5 15 25
+ Explanation: Linked List grows dynamically, array has fixed size.*/
 #include <iostream>
 using namespace std;
 struct Node

@@ -1,3 +1,10 @@
+/*Implement Circular Queue with Insert, Delete, Display.
+Example (size = 5):
+ Insert: 10 20 30 40
+ Delete two elements
+ Insert 50 60
+ Display → 30 40 50 60
+*/
 #include <iostream>
 using namespace std;
 class CircularQueue

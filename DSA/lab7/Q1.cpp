@@ -1,3 +1,11 @@
+/*Write a program to implement a Queue using Array with operations: Enqueue, Dequeue,
+Display, Peek, Check Empty/Full.
+Example:
+ Enqueue(10), Enqueue(20), Enqueue(30)
+ Display → 10 20 30
+ Peek → 10
+ Dequeue → removes 10
+ Display → 20 30*/
 #include <iostream>
 using namespace std;
 class QueueArray
