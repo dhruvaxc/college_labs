@@ -1,19 +1,23 @@
 #include <iostream>
 using namespace std;
-class QueueArray
+class CircularQueue
 {
 private:
     int *arr;
     int capacity;
+    int front;
+    int rear;
     int size;
 public:
-    QueueArray(int cap)
+    CircularQueue(int cap)
     {
         capacity = cap;
         arr = new int[capacity];
+        front = 0;
+        rear = -1;
         size = 0;
     }
-    ~QueueArray()
+    ~CircularQueue()
     {
         delete[] arr;
     }
@@ -25,37 +29,26 @@ public:
     {
         return size == capacity;
     }
-    bool Enqueue(int x)
+    bool Insert(int x)
     {
         if(isFull())
         {
             return false;
         }
-        arr[size] = x;
+        rear = (rear + 1) % capacity;
+        arr[rear] = x;
         size++;
         return true;
     }
-    bool Dequeue(int &out)
+    bool Delete(int &out)
     {
         if(isEmpty())
         {
             return false;
         }
-        out = arr[0];
-        for(int i = 1; i < size; i++)
-        {
-            arr[i - 1] = arr[i];
-        }
+        out = arr[front];
+        front = (front + 1) % capacity;
         size--;
-        return true;
-    }
-    bool Peek(int &out) const
-    {
-        if(isEmpty())
-        {
-            return false;
-        }
-        out = arr[0];
         return true;
     }
     void Display() const
@@ -66,7 +59,7 @@ public:
             {
                 cout << " ";
             }
-            cout << arr[i];
+            cout << arr[(front + i) % capacity];
         }
         cout << "\n";
     }
@@ -79,43 +72,45 @@ int main()
     {
         return 0;
     }
-    QueueArray q(cap);
-    int n;
-    cout << "Enter number of elements: ";
-    if(!(cin >> n))
+    CircularQueue q(cap);
+    int k1;
+    cout << "Enter number of elements to insert (k1): ";
+    if(!(cin >> k1))
     {
         return 0;
     }
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i < k1; i++)
     {
         int x;
         cout << "Enter element " << (i + 1) << ": ";
         cin >> x;
-        q.Enqueue(x);
+        q.Insert(x);
+    }
+    int kDel;
+    cout << "Enter number of deletions (kDel): ";
+    if(!(cin >> kDel))
+    {
+        return 0;
+    }
+    int out;
+    for(int i = 0; i < kDel; i++)
+    {
+        q.Delete(out);
+    }
+    int k2;
+    cout << "Enter number of elements to insert again (k2): ";
+    if(!(cin >> k2))
+    {
+        return 0;
+    }
+    for(int i = 0; i < k2; i++)
+    {
+        int x;
+        cout << "Enter element " << (i + 1) << ": ";
+        cin >> x;
+        q.Insert(x);
     }
     cout << "Display -> ";
     q.Display();
-    int p;
-    if(q.Peek(p))
-    {
-        cout << "Peek -> " << p << "\n";
-    }
-    else
-    {
-        cout << "Peek -> Empty\n";
-    }
-    int d;
-    if(q.Dequeue(d))
-    {
-        cout << "Dequeue -> " << d << "\n";
-    }
-    else
-    {
-        cout << "Dequeue -> Empty\n";
-    }
-    cout << "Display -> ";
-    q.Display();
-    cout << "Empty -> " << (q.isEmpty() ? 1 : 0) << "\n";
-    cout << "Full -> " << (q.isFull() ? 1 : 0) << "\n";
     return 0;
 }
